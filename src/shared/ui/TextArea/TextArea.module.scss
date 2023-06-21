@@ -1,0 +1,29 @@
+.TextArea {
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    color: var(--ligth-base);
+    background: none;
+    border: 1px solid var(--dark-base);
+    padding: .5rem .75rem;
+    transition: .2s;
+    appearance: none;
+    border-radius: 4px;
+    width: 100%;
+
+    &:hover {
+        border-color: var(--dark-lighter);
+    }
+    &:focus {
+        outline: 0 none;
+        outline-offset: 0;
+    }
+}
+
+.filled {
+    background: var(--dark-base);
+}
+
+.resizeable {
+    overflow: hidden;
+    resize: none;
+}

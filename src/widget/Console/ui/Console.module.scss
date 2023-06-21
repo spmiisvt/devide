@@ -1,0 +1,11 @@
+.Console {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 1rem;
+    z-index: 999;
+    background: var(--bg-color);
+    border-top-right-radius: 1rem;
+    height: 15rem;
+    padding: 1rem;
+}

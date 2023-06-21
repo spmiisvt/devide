@@ -1,0 +1,57 @@
+@import "reset";
+@import "variables/global";
+@import "variables/typography";
+@import "themes/normal";
+@import "themes/dark";
+
+html {
+    height: 100%;
+    font-size: var(--font-size-base);
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app-wrapper {
+    background: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+}
+.user_panel {
+    position: relative;
+    background: var(--dark-lighter);
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4rem 1rem 1rem 4rem;
+}
+
+.content_panel {
+    position: relative;
+    background: var(--dark-darker);
+    height: 100vh;
+    width: 400px;
+    display: flex;
+}
+.resizer {
+    width: 10px;
+    height: 100%;
+    background: var(--dark-darker);
+    transition: .2s;
+
+    &:hover {
+       background: var(--dark-base);
+    }
+
+    &:active {
+        cursor: col-resize;
+    }
+}
+
+
