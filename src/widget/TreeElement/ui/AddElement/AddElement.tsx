@@ -8,6 +8,7 @@ interface AddElementProps {
 }
 
 export const AddElement = ({className = ''}:AddElementProps) => {
+
     return (
         <div className={classNames(cls.AddElement, {}, [className])}>
             <p>Введите название папки или файла с расширением</p>

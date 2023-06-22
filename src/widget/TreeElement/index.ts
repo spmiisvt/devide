@@ -1,11 +1,9 @@
 import {TreeElement} from "./ui/TreeElement/TreeElement";
 import {AddElement} from "./ui/AddElement/AddElement";
-
-// import {DataTree, IDataTree} from './lib/data'
+import {type TreeModel} from "./model/TreeModel.ts";
 
 export {
     TreeElement,
-    // IDataTree,
-    // DataTree,
+    TreeModel,
     AddElement
 }

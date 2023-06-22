@@ -1,30 +1,25 @@
+import {TreeModel} from "src/widget/TreeElement";
 
-export interface IDataTree {
-    id: string;
-    label: string;
-    children?: IDataTree[];
-    selected?: boolean;
-}
 
-export const DataTree: IDataTree[] = [
+export const DataTree: TreeModel[] = [
     {
-        id: '1',
+        id: 1,
         label: "model",
         children: [
             {
-                id: '2',
+                id: 2,
                 label: 'Meat',
             },
             {
-                id: '3',
+                id: 3,
                 label: 'Salad',
                 children: [
                     {
-                        id: '4',
+                        id: 4,
                         label: 'Tomatoes'
                     },
                     {
-                        id: "5",
+                        id: 5,
                         label: "Cabbage"
                     }
                 ]
@@ -32,23 +27,23 @@ export const DataTree: IDataTree[] = [
         ]
     },
     {
-        id: '6',
+        id: 6,
         label: "services",
         children: [
             {
-                id: '7',
+                id: 7,
                 label: 'user',
             },
             {
-                id: '8',
+                id: 8,
                 label: 'auth',
                 children: [
                     {
-                        id: '9',
+                        id: 9,
                         label: 'Tomatoes'
                     },
                     {
-                        id: "10",
+                        id: 10,
                         label: "Cabbage"
                     }
                 ]

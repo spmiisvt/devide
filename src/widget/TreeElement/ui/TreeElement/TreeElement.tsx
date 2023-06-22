@@ -1,18 +1,18 @@
 
 import cls from './TreeElement.module.scss';
-import {IDataTree} from '../../lib/data'
 import {Branch} from "../Branch/Branch";
 import {classNames} from "src/shared/lib/classNames/classNames.ts";
+import {useAppSelector} from "src/app/hooks/redux.ts";
+
 interface TreeFolderProps {
     className?: string;
-    data?: IDataTree[];
 }
 
-export const TreeElement = ({className='', data}:TreeFolderProps) => {
-
+export const TreeElement = ({className=''}:TreeFolderProps) => {
+    const {TreeNodes} = useAppSelector(state => state.treeReducer)
     return (
         <div className={classNames(cls.TreeFolder, {}, [className])}>
-            {data?.map((item) => <Branch key={item.id} item={item} level={0} />)}
+            {TreeNodes.map((item) => <Branch key={item.id} item={item} level={0} />)}
         </div>
     );
 };

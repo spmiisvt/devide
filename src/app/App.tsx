@@ -5,22 +5,23 @@ import {Navbar} from "src/widget/Navbar";
 import {Sidebar} from "src/widget/Sidebar";
 import {CodeBlock} from "src/widget/CodeBlock/ui/CodeBlock.tsx";
 import {Console} from "src/widget/Console";
+
 function App() {
-  const {theme} = useTheme();
+    const {theme} = useTheme();
 
-  return (
-    <div className={classNames("app-wrapper", {}, [theme])}>
-      <div className="user_panel">
-        <Navbar/>
-        <Sidebar />
-        <CodeBlock />
-        <Console />
-      </div>
-      <div  className="content_panel">
+    return (
+        <div className={classNames("app-wrapper", {}, [theme])}>
+            <div className="user_panel">
+                <Navbar/>
+                <Sidebar/>
+                <CodeBlock/>
+                <Console/>
+            </div>
+            <div className="content_panel">
 
-      </div>
-    </div>
-  )
+            </div>
+        </div>
+    )
 }
 
 export default App

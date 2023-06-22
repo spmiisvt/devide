@@ -1,14 +1,14 @@
 
 import cls from './Node.module.scss';
 import {BsChevronDown, BsChevronRight, BsFileEarmarkCode, BsFolder} from "react-icons/bs";
-import {IDataTree} from "src/widget/TreeElement/lib/data.ts";
+import {TreeModel} from "../../model/TreeModel.ts";
 import {classNames} from "src/shared/lib/classNames/classNames.ts";
 import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
 
 
 interface NodeProps {
     className?: string;
-    item?: IDataTree;
+    item?: TreeModel;
     hasChildren?: boolean;
     level: number;
     onToggle: () => void;

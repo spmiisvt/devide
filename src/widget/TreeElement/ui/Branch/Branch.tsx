@@ -1,10 +1,9 @@
-
 import {useState} from "react";
 import {Node} from "../Node/Node";
-import {IDataTree} from "src/widget/TreeElement/lib/data.ts";
+import {TreeModel} from "../../model/TreeModel.ts";
 interface BranchProps {
     className?: string;
-    item?: IDataTree;
+    item?: TreeModel;
     level: number;
 }
 

@@ -11,11 +11,13 @@ export const InputText = (props:InputTextProps) => {
     const {
         className = '',
         filled = true,
+        type = 'text',
         ...other
     } = props;
 
     return (
         <input
+            type={type}
             className={classNames(cls.InputText, {[cls.filled]: filled}, [className])}
             {...other}
         />
