@@ -35,23 +35,5 @@
         display: flex;
         gap: 1rem;
     }
-    .navControl {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        column-gap: 1rem;
-
-        .playIcon {
-            color: var(--el-primary-green);
-            cursor: pointer;
-        }
-        .stopIcon {
-            color: var(--el-primary-red);
-            cursor: pointer;
-        }
-        .pauseIcon {
-            color: var(--el-primary-orange);
-        }
-    }
 }
 
