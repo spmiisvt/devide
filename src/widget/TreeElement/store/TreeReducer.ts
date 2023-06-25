@@ -14,7 +14,7 @@ export const treeSlice = createSlice({
     initialState,
     reducers: {
         addElement(state, action) {
-            state.TreeNodes = action.payload
+            state.TreeNodes.push(action.payload)
         }
     }
 })

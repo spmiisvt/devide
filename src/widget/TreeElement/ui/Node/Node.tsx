@@ -1,10 +1,8 @@
-
 import cls from './Node.module.scss';
 import {BsChevronDown, BsChevronRight, BsFileEarmarkCode, BsFolder} from "react-icons/bs";
 import {TreeModel} from "../../model/TreeModel.ts";
 import {classNames} from "src/shared/lib/classNames/classNames.ts";
 import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
-
 
 interface NodeProps {
     className?: string;
@@ -22,8 +20,9 @@ export const Node = (props: NodeProps) => {
         hasChildren,
         level,
         selected,
-        onToggle
-    } = props
+        onToggle,
+    } = props;
+
     return (
         <div
             className={classNames(cls.Node, {}, [className])}
@@ -35,8 +34,7 @@ export const Node = (props: NodeProps) => {
                 </Button>
             )}
             {hasChildren ? <BsFolder size={16} className={cls.IconFolder}/> : <BsFileEarmarkCode size={16} className={cls.Icon}/>}
-            {item?.label}
-
+            {<Button theme={ThemeButton.CLEAR}>{item?.label}</Button>}
         </div>
     );
 };

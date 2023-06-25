@@ -38,6 +38,7 @@ body {
     height: 100vh;
     width: 500px;
     display: flex;
+    flex-direction: column;
 }
 .resizer {
     width: 10px;
