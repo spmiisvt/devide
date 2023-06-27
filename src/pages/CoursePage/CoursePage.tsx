@@ -3,6 +3,7 @@ import {Navbar} from "src/widget/Navbar";
 import {Sidebar} from "src/widget/Sidebar";
 import {CodeBlock} from "src/widget/CodeBlock/ui/CodeBlock.tsx";
 import {Console} from "src/widget/Console";
+import {Outlet} from "react-router-dom";
 
 
 export const CoursePage = () => {
@@ -15,7 +16,7 @@ export const CoursePage = () => {
                 <Console/>
             </div>
             <div className={cls.contentPanel}>
-
+                <Outlet />
             </div>
         </>
     );
