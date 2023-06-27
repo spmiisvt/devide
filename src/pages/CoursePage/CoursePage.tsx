@@ -4,9 +4,11 @@ import {Sidebar} from "src/widget/Sidebar";
 import {CodeBlock} from "src/widget/CodeBlock/ui/CodeBlock.tsx";
 import {Console} from "src/widget/Console";
 import {Outlet} from "react-router-dom";
+import {ManageLecturePanel} from "src/widget/ManageLecturePanel/ui/ManageLecturePanel.tsx";
 
 
 export const CoursePage = () => {
+
     return (
         <>
             <div className={cls.userPanel}>
@@ -16,7 +18,9 @@ export const CoursePage = () => {
                 <Console/>
             </div>
             <div className={cls.contentPanel}>
-                <Outlet />
+                <div className={cls.SizeChangeBlock}></div>
+                <ManageLecturePanel/>
+                <Outlet/>
             </div>
         </>
     );
