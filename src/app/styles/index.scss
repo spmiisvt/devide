@@ -20,39 +20,10 @@ body {
 
 .app-wrapper {
     background: var(--bg-color);
+    width: 100%;
     min-height: 100vh;
     display: flex;
 }
-.user_panel {
-    position: relative;
-    background: var(--dark-lighter);
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: flex-end;
-    padding: 4rem 1rem 1rem 4rem;
-}
 
-.content_panel {
-    position: relative;
-    background: var(--dark-darker);
-    height: 100vh;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-}
-.resizer {
-    width: 10px;
-    height: 100%;
-    background: var(--dark-darker);
-    transition: .2s;
-
-    &:hover {
-       background: var(--dark-base);
-    }
-
-    &:active {
-        cursor: col-resize;
-    }
-}
 
 

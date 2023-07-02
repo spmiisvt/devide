@@ -17,7 +17,7 @@ export const Sidebar = (props:SidebarProps) => {
     const {
         className = '',
     } = props;
-    const [isCollapse, setCollapsed] = useState(false);
+    const [isCollapse, setCollapsed] = useState(true);
     const [isAddItemModal, setAddItemModal] = useState(false);
 
     const onToggle = () => {

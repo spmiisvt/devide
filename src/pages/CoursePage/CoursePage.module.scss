@@ -1,9 +1,8 @@
 .userPanel {
     position: relative;
     background: var(--dark-lighter);
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     display: flex;
-    justify-content: flex-end;
     padding: 4rem 1rem 1rem 4rem;
 }
 
@@ -11,21 +10,8 @@
     position: relative;
     background: var(--dark-darker);
     height: 100vh;
-    width: 500px;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-}
-.SizeChangeBlock {
-    position: absolute;
-    background: var(--bg-color);
-    z-index: 10;
-    top: 2rem;
-    left: -.7rem;
-    height: calc(100vh - 2rem);
-    width: .7rem;
-    transition: .4s;
-    &:hover {
-        background: var(--el-primary-blue-d);
-        cursor: ew-resize;
-    }
+    user-select: none;
 }

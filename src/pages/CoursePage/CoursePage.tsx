@@ -5,20 +5,25 @@ import {CodeBlock} from "src/widget/CodeBlock/ui/CodeBlock.tsx";
 import {Console} from "src/widget/Console";
 import {Outlet} from "react-router-dom";
 import {ManageLecturePanel} from "src/widget/ManageLecturePanel/ui/ManageLecturePanel.tsx";
+import {Resizable} from "src/shared/ui/Resizable/Resizable.tsx";
+import {useState} from "react";
 
 
 export const CoursePage = () => {
+    const [width, setWidth] = useState(800)
 
     return (
         <>
-            <div className={cls.userPanel}>
-                <Navbar/>
-                <Sidebar/>
-                <CodeBlock/>
-                <Console/>
-            </div>
+            <Resizable direction={'horizontal'} resizerPosition={'right'} changedWidth={(v) => setWidth(v - 100)}>
+                <div className={cls.userPanel}>
+                    <Navbar/>
+                    <Sidebar/>
+                    <CodeBlock width={width}/>
+                    <Console/>
+                </div>
+            </Resizable>
+
             <div className={cls.contentPanel}>
-                <div className={cls.SizeChangeBlock}></div>
                 <ManageLecturePanel/>
                 <Outlet/>
             </div>

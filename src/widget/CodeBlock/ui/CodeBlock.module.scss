@@ -1,7 +1,6 @@
 .CodeBlock {
-    background: var(--dark-base);
-    width: 100%;
+    flex: 1 0 auto;
     height: calc(100vh - 20rem);
     border-radius: 1rem;
-    padding: 1rem;
+    overflow: hidden;
 }

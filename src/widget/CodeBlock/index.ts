@@ -1,4 +1,4 @@
-import {CodeBlock} from "widget/CodeBlock/ui/CodeBlock";
+import {CodeBlock} from "./ui/CodeBlock";
 
 export {
     CodeBlock
